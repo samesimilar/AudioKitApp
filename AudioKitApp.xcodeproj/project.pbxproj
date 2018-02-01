@@ -12,6 +12,8 @@
 		4AB36A5F20238FCF001FD739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB36A5D20238FCF001FD739 /* Main.storyboard */; };
 		4AB36A6120238FCF001FD739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB36A6020238FCF001FD739 /* Assets.xcassets */; };
 		4AB36A6420238FCF001FD739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB36A6220238FCF001FD739 /* LaunchScreen.storyboard */; };
+		4AB36A6E202390B5001FD739 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB36A6C202390B4001FD739 /* AudioKit.framework */; };
+		4AB36A6F202390B5001FD739 /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB36A6D202390B5001FD739 /* AudioKitUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4AB36A6020238FCF001FD739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AB36A6320238FCF001FD739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AB36A6520238FCF001FD739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AB36A6C202390B4001FD739 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = AudioKitApp/AudioKit.framework; sourceTree = "<group>"; };
+		4AB36A6D202390B5001FD739 /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKitUI.framework; path = AudioKitApp/AudioKitUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB36A6E202390B5001FD739 /* AudioKit.framework in Frameworks */,
+				4AB36A6F202390B5001FD739 /* AudioKitUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 			children = (
 				4AB36A5820238FCF001FD739 /* AudioKitApp */,
 				4AB36A5720238FCF001FD739 /* Products */,
+				4AB36A6B202390B4001FD739 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,15 @@
 				4AB36A6520238FCF001FD739 /* Info.plist */,
 			);
 			path = AudioKitApp;
+			sourceTree = "<group>";
+		};
+		4AB36A6B202390B4001FD739 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AB36A6C202390B4001FD739 /* AudioKit.framework */,
+				4AB36A6D202390B5001FD739 /* AudioKitUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +292,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PKZDGF65SL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioKitApp",
+				);
 				INFOPLIST_FILE = AudioKitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.utoronto.AudioKitApp;
@@ -291,6 +311,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PKZDGF65SL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioKitApp",
+				);
 				INFOPLIST_FILE = AudioKitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.utoronto.AudioKitApp;
