@@ -30,7 +30,7 @@ class ViewController: UIViewController, AKKeyboardDelegate, XYViewDelegate {
         keyboardView.octaveCount = 2
         keyboardView.firstOctave = 1
         keyboardView.delegate = self
-        keyboardView.autoresizingMask = [UIViewAutoresizing.flexibleHeight, UIViewAutoresizing.flexibleWidth]
+        keyboardView.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight, UIView.AutoresizingMask.flexibleWidth]
         containerView.addSubview(keyboardView)
 
     }

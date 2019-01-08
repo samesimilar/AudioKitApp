@@ -1,0 +1,6 @@
+Pods/
+.DS_Store
+.Trashes
+*~.nib
+*.pbxuser
+xcuserdata/

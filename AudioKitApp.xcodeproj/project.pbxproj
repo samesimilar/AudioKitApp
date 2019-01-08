@@ -13,6 +13,7 @@
 		4AB36A6120238FCF001FD739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB36A6020238FCF001FD739 /* Assets.xcassets */; };
 		4AB36A6420238FCF001FD739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB36A6220238FCF001FD739 /* LaunchScreen.storyboard */; };
 		4AB36A782023BB47001FD739 /* XYView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB36A772023BB47001FD739 /* XYView.swift */; };
+		7306292ED494E5622A359AD6 /* Pods_AudioKitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8108F9511FE96F85EA5B0DA /* Pods_AudioKitApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C40B56DBE974FCFB1B4A1AF /* Pods-AudioKitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioKitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioKitApp/Pods-AudioKitApp.release.xcconfig"; sourceTree = "<group>"; };
 		4AB36A5620238FCF001FD739 /* AudioKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB36A5920238FCF001FD739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AB36A5B20238FCF001FD739 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,8 @@
 		4AB36A6320238FCF001FD739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AB36A6520238FCF001FD739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AB36A772023BB47001FD739 /* XYView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYView.swift; sourceTree = "<group>"; };
+		E003DE89EF4F5A5C9EE5E06F /* Pods-AudioKitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioKitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioKitApp/Pods-AudioKitApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F8108F9511FE96F85EA5B0DA /* Pods_AudioKitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioKitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7306292ED494E5622A359AD6 /* Pods_AudioKitApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,7 @@
 				4AB36A5820238FCF001FD739 /* AudioKitApp */,
 				4AB36A5720238FCF001FD739 /* Products */,
 				4AB36A6B202390B4001FD739 /* Frameworks */,
+				C4663BCF61DCF5066664EA31 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,8 +90,18 @@
 		4AB36A6B202390B4001FD739 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8108F9511FE96F85EA5B0DA /* Pods_AudioKitApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4663BCF61DCF5066664EA31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E003DE89EF4F5A5C9EE5E06F /* Pods-AudioKitApp.debug.xcconfig */,
+				2C40B56DBE974FCFB1B4A1AF /* Pods-AudioKitApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +111,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AB36A6820238FCF001FD739 /* Build configuration list for PBXNativeTarget "AudioKitApp" */;
 			buildPhases = (
+				DACD7E8404545151D213F084 /* [CP] Check Pods Manifest.lock */,
 				4AB36A5220238FCF001FD739 /* Sources */,
 				4AB36A5320238FCF001FD739 /* Frameworks */,
 				4AB36A5420238FCF001FD739 /* Resources */,
@@ -121,6 +138,7 @@
 				TargetAttributes = {
 					4AB36A5520238FCF001FD739 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -155,6 +173,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DACD7E8404545151D213F084 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioKitApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4AB36A5220238FCF001FD739 /* Sources */ = {
@@ -298,6 +337,7 @@
 		};
 		4AB36A6920238FCF001FD739 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E003DE89EF4F5A5C9EE5E06F /* Pods-AudioKitApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,13 +351,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.utoronto.AudioKitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		4AB36A6A20238FCF001FD739 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C40B56DBE974FCFB1B4A1AF /* Pods-AudioKitApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -331,7 +372,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.utoronto.AudioKitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
