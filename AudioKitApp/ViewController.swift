@@ -32,11 +32,21 @@ class ViewController: UIViewController, AKKeyboardDelegate, XYViewDelegate {
         keyboardView.delegate = self
         keyboardView.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight, UIView.AutoresizingMask.flexibleWidth]
         containerView.addSubview(keyboardView)
+        
+
+        
+        do {
+
+        } catch let e {
+            fatalError(e.localizedDescription)
+        }
+        
+       
 
     }
 
     func noteOn(note: MIDINoteNumber) {
-
+        
     }
     
     func noteOff(note: MIDINoteNumber) {
